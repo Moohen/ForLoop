@@ -7,8 +7,10 @@ public class Main {
         int count = 0;
         for (int i = 10; i <50;i++) {
             if (isPrime(i)) {
+                //count++ DOES every loop sends information to count, if a prime number appears in the loop
                 count++;
                 System.out.println("Number " + i + " is a prime number");
+                // if statement DOES count to 3 and if finally it is 3 than it exiting for loop
                 if (count == 3) {
                     System.out.println("Exiting for loop");
                     break;
